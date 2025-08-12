@@ -1,0 +1,20 @@
+ #homeCarousel .carousel-item{
+  height: clamp(280px, 55vh, 560px);
+}
+
+#homeCarousel .carousel-item img{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;          
+  object-position: center;
+}
+
+#homeCarousel .carousel-inner{
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0,0,0,.12);
+}
+
+#homeCarousel .carousel-caption{
+  text-shadow: 0 2px 8px rgba(0,0,0,.6);
+}
