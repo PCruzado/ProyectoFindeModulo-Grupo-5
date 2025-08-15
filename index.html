@@ -19,8 +19,177 @@
     <title>Document</title>
   </head>
   <body>
-    <header></header>
-
+    <header>
+      <nav class="navbar navbar-expand-lg mt-3 navR">
+        <div class="container">
+          <!-- Nav desktop -->
+          <ul class="nav-cont">
+            <li class="items">
+              <a class="navbar-brand" href="#">
+                <img
+                  src="img/logo-minimalista-de-indumentaria.png"
+                  alt="Logo Rolling Indumentaria"
+                  class="navImg"
+                />
+              </a>
+            </li>
+            <li class="items supItems">
+              <button
+                class="d-none d-lg-inline"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-registro"
+              >
+                <i class="bi bi-person-circle icon"></i> Iniciar Sesión
+              </button>
+              <button
+                class="d-block d-lg-none"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-registro"
+              >
+                <span href="" class="d-block d-lg-none">
+                  <i class="bi bi-person-fill icon"></i>
+                </span>
+              </button>
+            </li>
+            <li class="items supItems">
+              <a href="Carrito.html" class="d-none d-lg-inline">
+                <i class="bi bi-cart2 icon"></i> Carrito
+              </a>
+              <a href="Carrito.html" class="d-block d-lg-none">
+                <i class="bi bi-bag-fill icon"></i>
+              </a>
+            </li>
+            <li class="items d-none d-lg-inline">
+              <a href="index.html">Inicio/</a>
+            </li>
+            <li class="items d-none d-lg-inline product">
+              <a href="categoria.html"
+                >Productos <i class="bi bi-caret-down-fill"></i>/</a
+              >
+              <div class="contP">
+                <a href="404.html">Pantalones</a>
+                <a href="404.html">Zapatillas</a>
+                <a href="404.html">Buzos</a>
+                <a href="404.html">Remeras</a>
+                <a href="404.html">Accesorios</a>
+              </div>
+            </li>
+            <li class="items d-none d-lg-inline">
+              <a href="Contacto.html">Contacto/</a>
+            </li>
+            <li class="items d-none d-lg-inline">
+              <a href="SobreNosotros.html">Sobre Nosotros</a>
+            </li>
+            <li class="items d-none d-lg-inline">
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control buscar"
+                  type="search"
+                  placeholder="Buscar"
+                  aria-label="Search"
+                />
+              </form>
+            </li>
+            <li class="items">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </li>
+          </ul>
+          <!-- Nav mobile -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 d-block d-lg-none">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Productos
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="404.html">Zapatillas</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="404.html">Pantalones</a>
+                  </li>
+                  <li><a class="dropdown-item" href="404.html">Buzos</a></li>
+                  <li><a class="dropdown-item" href="404.html">Remeras</a></li>
+                  <li>
+                    <a class="dropdown-item" href="404.html">Accesorios</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="Contacto.html"
+                  >Contacto</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="SobreNosotros.html"
+                  >Sobre Nosotros</a
+                >
+              </li>
+            </ul>
+            <form class="d-flex d-block d-lg-none mt-3" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+            </form>
+          </div>
+        </div>
+      </nav>
+      <nav class="envios d-none d-lg-block">
+        <div class="container-fluid">
+          <div
+            id="carouselExampleSlidesOnly"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <h5>
+                  Envíos gratis a todo el país en compras mayores a $90.000
+                </h5>
+              </div>
+              <div class="carousel-item">
+                <h5>10% de descuento pagando con transferencia bancaria</h5>
+              </div>
+              <div class="carousel-item">
+                <h5>Hasta 6 Cuotas sin Interés</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
     <main>
       <section class="container-fluid px-0 container my-5">
         <div
