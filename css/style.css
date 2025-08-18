@@ -192,7 +192,7 @@ main {
 }
 
 .banner {
-  .col-12{
+  .col-12 {
     padding: 0 !important;
   }
 }
@@ -362,4 +362,63 @@ main {
       text-align: start;
     }
   }
+}
+
+/* estilos para la pagina sobre nosotros */
+
+.imagen-container {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 12px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.imagen-container img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+  transition: transform 0.5s;
+}
+
+.overplay {
+  height: 0;
+  width: 100%;
+  background: linear-gradient(transparent, #1c1c1c 58%);
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 14px;
+  transition: height 0.5s;
+  color: white;
+}
+
+.overplay h5 {
+  font-weight: 500;
+  margin-bottom: 5px;
+  margin-top: 80%;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+.imagen-container :hover img {
+    transform: scale(1.2);
+}
+
+.imagen-container:hover .overplay {
+  height: 100%;
+}
+
+.imagen-container:hover{
+  transform: translateY(-20px);
+  transition: 700ms ease-in;
 }
