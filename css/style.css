@@ -164,7 +164,7 @@ main {
 }
 .cat-img {
   object-fit: cover;
-  transition: transform 0.5s ease;
+  transition: 0.5s ease;
   height: 100%;
 }
 .cat-card:hover .cat-img {
