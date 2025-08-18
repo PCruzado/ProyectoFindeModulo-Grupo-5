@@ -192,11 +192,22 @@ main {
 }
 
 .banner {
-  .col-12{
+  .col-12 {
     padding: 0 !important;
   }
 }
+.consulta-cont {
+  margin-top: 1em;
+}
 
+.consulta {
+  resize: none;
+}
+
+.mapTamaño {
+  width: 100%;
+  height: 350px;
+}
 @media (max-width: 576px) {
   .h1-error {
     font-size: 1.2rem;
@@ -222,6 +233,31 @@ main {
   }
   .icon {
     font-size: xx-large;
+  }
+  .cont-box {
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.452);
+    margin-top: 5em;
+  }
+  .consulta-box {
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.452);
+    margin: 0px 10px;
+    padding: 10px;
+    ::placeholder {
+      text-align: center;
+      font-size: large;
+      font: BebasNeue-Regular, Arial, sans-serif;
+    }
+    input {
+      text-align: center;
+    }
+  }
+  .consulta {
+    resize: none;
+    height: 290px;
   }
   .items {
     &:nth-child(1) {
@@ -253,6 +289,30 @@ main {
     display: inline-block;
     font-size: x-large;
     vertical-align: middle;
+  }
+  .cont-box {
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.452);
+  }
+  .consulta-box {
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.452);
+    margin: 0px 10px;
+    padding: 10px;
+    ::placeholder {
+      text-align: center;
+      font-size: large;
+      font: BebasNeue-Regular, Arial, sans-serif;
+    }
+    input {
+      text-align: center;
+    }
+  }
+  .consulta {
+    resize: none;
+    height: 350px;
   }
   .supItems {
     a,
@@ -313,6 +373,30 @@ main {
     display: inline-block;
     font-size: x-large;
     vertical-align: middle;
+  }
+  .cont-box {
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.452);
+  }
+  .consulta-box {
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.452);
+    margin: 0px 10px;
+    padding: 10px;
+    ::placeholder {
+      text-align: center;
+      font-size: large;
+      font: BebasNeue-Regular, Arial, sans-serif;
+    }
+    input {
+      text-align: center;
+    }
+  }
+  .consulta {
+    resize: none;
+    height: 290px;
   }
   .supItems {
     a,
