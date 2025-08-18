@@ -200,7 +200,62 @@
         </div>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <section class="container my-2">
+        <div class="row cont-box">
+          <div class=" col-12 col-md-6 mb-3 mt-md-3">
+            <form class="consulta-box">
+              <div class="my-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Nombre y apellido"
+                  aria-label="default input example"
+                  minlength="3"
+                  maxlength="50"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Email"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  minlength="3"
+                  maxlength="50"
+                />
+              </div>
+              <div class="mb-3">
+                <textarea
+                  name="mensaje"
+                  class="form-control text-area consulta"
+                  placeholder="Ingrese el mensaje que desea mandar de hasta 300 caracteres."
+                  rows="3"
+                  minlength="10"
+                  maxlength="500"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-danger fs-5 mb-3">
+                Enviar mensaje
+              </button>
+            </form>
+          </div>
+          <div
+            class="container-fluid col-12 col-md-6 mb-3 mt-md-3 consulta-map"
+          >
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.1060679493785!2d-65.20974192332177!3d-26.83657849002932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d3ad7f30f1d%3A0xf8606cd659b8e3e4!2sRollingCode%20School!5e0!3m2!1ses-419!2sar!4v1754932280957!5m2!1ses-419!2sar"
+              class="w-100 rounded-4"
+              style="height: 100%"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer class="bg-dark">
       <section class="container">
         <div class="row text-center justify-cotent-center align-items-center">
