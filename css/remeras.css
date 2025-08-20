@@ -1,0 +1,130 @@
+.contenedor-img{
+    width: 320px;
+    height: 320px;
+    background-image: url(../img/Remeras/RemeraIndependentClipper/item38487foto154875th.jpg);
+    background-repeat: none;
+    background-size: cover;
+    transition: 0.5s ease;
+    object-fit: cover;
+    
+}
+.contenedor-img:hover{
+    cursor: pointer;
+    transition: 0.5s ease;
+    transform: scale(1.2);
+    background-image: url(../img/Remeras/RemeraIndependentClipper/item38487foto154874th.jpg);
+}
+
+.contenedor-img1{
+    width: 320px;
+    height: 320px;
+    background-image: url(../img/Remeras/RemeraRipCurlRC/item38564foto155185th.jpg);
+    background-repeat: none;
+    background-size: cover;
+    transition: 0.5s ease;
+    object-fit: cover;
+    
+}
+.contenedor-img1:hover{
+    cursor: pointer;
+    transition: 0.5s ease;
+    transform: scale(1.2);
+    background-image: url(../img/Remeras/RemeraRipCurlRC/item38564foto155184th.jpg);
+}
+
+.contenedor-img2{
+    width: 320px;
+    height: 320px;
+    background-image: url(../img/Remeras/RemeraRipCurlsEveryday/item38566foto155181th.jpg);
+    background-repeat: none;
+    background-size: cover;
+    transition: 0.5s ease;
+    object-fit: cover;
+    
+}
+.contenedor-img2:hover{
+    cursor: pointer;
+    transition: 0.5s ease;
+    transform: scale(1.2);
+    background-image: url(../img/Remeras//RemeraRipCurlsEveryday/item38566foto155180th.jpg);
+}
+.contenedor-img3{
+    width: 320px;
+    height: 320px;
+    background-image: url(../img/Remeras/RemeraSantaCruzOtherDot/item37503foto151620th.jpg);
+    background-repeat: none;
+    background-size: cover;
+    transition: 0.5s ease;
+    object-fit: cover;
+    
+}
+.contenedor-img3:hover{
+    cursor: pointer;
+    transition: 0.5s ease;
+    transform: scale(1.2);
+    background-image: url(../img/Remeras//RemeraSantaCruzOtherDot/item37503foto151619th.jpg);
+}
+.contenedor-img4{
+    width: 320px;
+    height: 320px;
+    background-image: url(../img/Remeras/RemeraSantaCruzRoskoppEyeInvert/item37277foto150727th.jpg);
+    background-repeat: none;
+    background-size: cover;
+    transition: 0.5s ease;
+    object-fit: cover;
+    
+}
+.contenedor-img4:hover{
+    cursor: pointer;
+    transition: 0.5s ease;
+    transform: scale(1.2);
+    background-image: url(../img/Remeras/RemeraSantaCruzRoskoppEyeInvert/item37277foto150728th.jpg);
+}
+.contenedor-img5{
+    width: 320px;
+    height: 320px;
+    background-image: url(../img/Remeras/RemeraVansClassic/item37860foto152928th.jpg);
+    background-repeat: none;
+    background-size: cover;
+    transition: 0.5s ease;
+    object-fit: cover;
+    
+}
+.contenedor-img5:hover{
+    cursor: pointer;
+    transition: 0.5s ease;
+    transform: scale(1.2);
+    background-image: url(../img/Remeras/RemeraVansClassic/item37860foto152929th.jpg);
+}
+.contenedor-img6{
+    width: 320px;
+    height: 320px;
+    background-image: url(../img/Remeras/RemeraVisionOverCkassic/item37512foto151666th.jpg);
+    background-repeat: none;
+    background-size: cover;
+    transition: 0.5s ease;
+    object-fit: cover;
+    
+}
+.contenedor-img6:hover{
+    cursor: pointer;
+    transition: 0.5s ease;
+    transform: scale(1.2);
+    background-image: url(../img/Remeras/RemeraVisionOverCkassic/item37512foto151667th.jpg);
+}
+.contenedor-img7{
+    width: 320px;
+    height: 320px;
+    background-image: url(../img/Remeras/RemeraVolcomEcoYarns/item39218foto157504th.jpg);
+    background-repeat: none;
+    background-size: cover;
+    transition: 0.5s ease;
+    object-fit: cover;
+    
+}
+.contenedor-img7:hover{
+    cursor: pointer;
+    transition: 0.5s ease;
+    transform: scale(1.2);
+    background-image: url(../img/Remeras/RemeraVolcomEcoYarns/item39218foto157503th.jpg);
+}
