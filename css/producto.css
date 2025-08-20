@@ -1,0 +1,103 @@
+.thumbs img {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      cursor: pointer;
+      border: 2px solid transparent;
+      border-radius: 6px;
+}
+
+.thumbs img.active {
+      border-color: #0d6efd;
+}
+
+.main-img {
+      width: 100%;
+      border-radius: 10px;
+      object-fit: contain;
+}
+
+.product-card {
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      height: 100%;
+}
+
+.product-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+      height: 220px;
+      width: 100%;
+      object-fit: cover;
+}
+
+.old-price {
+      text-decoration: line-through;
+      color: #888;
+      font-size: 14px;
+}
+
+.discount {
+      color: #00a650;
+      font-weight: bold;
+      font-size: 14px;
+      margin-left: 6px;
+}
+
+.free-shipping {
+      color: #00a650;
+      font-size: 14px;
+      font-weight: bold;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: auto;              /* evita que ocupen todo el alto */
+  top: 50%;                 /* centrado vertical */
+  transform: translateY(-50%);
+}
+
+.carousel-control-prev {
+  left: -20px;              /* ajusta la distancia al borde izquierdo */
+}
+
+.carousel-control-next {
+  right: -20px;             /* ajusta la distancia al borde derecho */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: white;  /* fondo blanco como en ML */
+  border-radius: 50%;       /* círculo */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2); /* sombra ligera */
+}
+
+.descripcion h4 {
+    font-weight: bold;
+}
+
+.lista-descripcion {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #666;
+}
+
+.lista-descripcion li {
+    margin-bottom: 6px;
+}
+
+.extra {
+    display: none; /* Se ocultan al inicio */
+}
+
+#toggleDescripcion {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
