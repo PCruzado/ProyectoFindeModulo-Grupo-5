@@ -44,7 +44,7 @@
                 class="d-none d-lg-inline"
                 type="button"
                 data-bs-toggle="modal"
-                data-bs-target="#modal-registro"
+                data-bs-target="#exampleModal"
               >
                 <i class="bi bi-person-circle icon"></i> Iniciar Sesión
               </button>
@@ -52,7 +52,7 @@
                 class="d-block d-lg-none"
                 type="button"
                 data-bs-toggle="modal"
-                data-bs-target="#modal-registro"
+                data-bs-target="#exampleModal"
               >
                 <span href="" class="d-block d-lg-none">
                   <i class="bi bi-person-fill icon"></i>
@@ -254,7 +254,7 @@
                 type="button"
                 class="btn btn-primary"
                 data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
+                data-bs-target="#Forum"
               >
                 Vista Previa
               </button>
@@ -262,15 +262,15 @@
               <!-- Modal -->
               <div
                 class="modal fade"
-                id="exampleModal"
+                id="Forum"
                 tabindex="-1"
-                aria-labelledby="exampleModalLabel"
+                aria-labelledby="Forum"
                 aria-hidden="true"
               >
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="exampleModalLabel">
+                      <h1 class="modal-title fs-5" id="Forum">
                         Zapatillas Forum 84 Low ADV
                       </h1>
                       <button
@@ -938,6 +938,76 @@
           </div>
         </div>
       </section>
+
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Ingresá a tu cuenta</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <article class="row">
+                            <div class="col-12 col-md-6">
+                               <form>
+                                <div class="mb-3">
+                                    <label for="email" class="col-form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Ingresá tu Email">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="password" class="col-form-label">Contraseña</label>
+                                    <input type="password" class="form-control" id="password" placeholder="Ingresá tu Contraseña">
+                                </div>
+                                </form>
+                                <button type="button" class="btn btn-link mb-3" data-bs-target="#exampleModal2" data-bs-toggle="modal">Olvidé mi Contraseña</button> 
+                                
+                                <a href="/pages/registro.html" class="btn btn-link mb-3">No tienes una cuenta?</a>
+
+                                <a href="/pages/error404.html" class="btn btn-light border d-flex align-items-center gap-2 mb-3">
+                                    <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google" width="20" height="20">
+                                    Iniciar sesión con Google
+                                </a>
+
+                                <a href="/pages/error404.html" class="btn btn-primary d-flex align-items-center gap-2 mb-3" style="background-color: #1877F2; border-color: #1877F2;">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" 
+                                        alt="Facebook" width="20" height="20">
+                                    Iniciar sesión con Facebook
+                                </a>
+                            </div>
+                            
+                            <div class="col-12 col-md-6">
+                                <img src="/img/Classic-Skater-for-Guys_600x600.webp" alt="Chico en skate" class="rounded-3 img-fluid">
+                            </div>
+                        </article>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="/pages/error404.html" class="btn btn-primary">Ingresar</a>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Salir</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true" style="display: none;">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel2">Recuperá tu Contraseña</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="email" class="col-form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Ingresá tu Email">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="/pages/error404.html" class="btn btn-primary">Recuperar</a>
+                        <button type="button" class="btn btn-secondary" data-bs-target="#exampleModal" data-bs-toggle="modal">Volver</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer class="bg-dark">
       <section class="container">
@@ -981,6 +1051,6 @@
         </div>
       </section>
     </footer>
-    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
