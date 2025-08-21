@@ -1,0 +1,20 @@
+.line-vertical {
+  width: 1000px;
+  height: 1px;
+  background-color: grey;
+}
+
+.div-img{
+    transition: 0.5s ease;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.img-card{
+    transition: 0.5s ease;
+}
+
+.img-card:hover {
+  transform: scale(1.2);
+   
+}

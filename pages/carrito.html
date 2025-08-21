@@ -1,22 +1,540 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Marcos - Matias - Lucas - Pablo - Facundo">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Marcos - Matias - Lucas - Pablo - Facundo" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="../img/logo-empresa.png"
+      type="image/x-icon"
+    />
+    <title>Carrito</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navR">
+        <div class="container">
+          <!-- Nav desktop -->
+          <ul class="nav-cont">
+            <li class="items">
+              <a class="navbar-brand" href="../index.html">
+                <img
+                  src="../img/logo-minimalista-de-indumentaria.png"
+                  alt="Logo Rolling Indumentaria"
+                  class="navImg"
+                />
+              </a>
+            </li>
+            <li class="items supItems">
+              <button
+                class="d-none d-lg-inline"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                <i class="bi bi-person-circle icon"></i> Iniciar Sesión
+              </button>
+              <button
+                class="d-block d-lg-none"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                <span href="" class="d-block d-lg-none">
+                  <i class="bi bi-person-fill icon"></i>
+                </span>
+              </button>
+            </li>
+            <li class="items supItems">
+              <a href="carrito.html" class="d-none d-lg-inline">
+                <i class="bi bi-cart2 icon"></i> Carrito
+              </a>
+              <a href="carrito.html" class="d-block d-lg-none">
+                <i class="bi bi-bag-fill icon"></i>
+              </a>
+            </li>
+            <li class="items d-none d-lg-inline">
+              <a href="../index.html">Inicio/</a>
+            </li>
+            <li class="items d-none d-lg-inline product">
+              <a href="#" role="button"
+                >Productos <i class="bi bi-caret-down-fill"></i>/</a
+              >
+              <div class="contP">
+                <a href="categoria1.html">Remeras</a>
+                <a href="categoria2.html">Zapatillas</a>
+                <a href="error404.html">Buzos</a>
+                <a href="error404.html">Pantalones</a>
+                <a href="error404.html">Accesorios</a>
+              </div>
+            </li>
+            <li class="items d-none d-lg-inline">
+              <a href="contacto.html">Contacto/</a>
+            </li>
+            <li class="items d-none d-lg-inline">
+              <a href="sobrenosotros.html">Sobre Nosotros</a>
+            </li>
+            <li class="items d-none d-lg-inline">
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control buscar"
+                  type="search"
+                  placeholder="Buscar"
+                  aria-label="Search"
+                />
+              </form>
+            </li>
+            <li class="items">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </li>
+          </ul>
+          <!-- Nav mobile -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 d-block d-lg-none">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Productos
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="categoria1.html">Remeras</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="categoria2.html"
+                      >Zapatillas</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="error404.html">Buzos</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="error404.html">Pantalones</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="error404.html">Accesorios</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="contacto.html"
+                  >Contacto</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="sobrenosotros.html"
+                  >Sobre Nosotros</a
+                >
+              </li>
+            </ul>
+            <form class="d-flex d-block d-lg-none mt-3" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+            </form>
+          </div>
+        </div>
+      </nav>
+      <nav class="envios d-none d-lg-block">
+        <div class="container-fluid">
+          <div
+            id="carouselExampleSlidesOnly"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <h5>
+                  Envíos gratis a todo el país en compras mayores a $90.000
+                </h5>
+              </div>
+              <div class="carousel-item">
+                <h5>10% de descuento pagando con transferencia bancaria</h5>
+              </div>
+              <div class="carousel-item">
+                <h5>Hasta 6 Cuotas sin Interés</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
     <main>
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+        style="display: none"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Ingresá a tu cuenta
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <article class="row">
+                <div class="col-12 col-md-6">
+                  <form>
+                    <div class="mb-3">
+                      <label for="email" class="col-form-label">Email</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        placeholder="Ingresá tu Email"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="password" class="col-form-label"
+                        >Contraseña</label
+                      >
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="password"
+                        placeholder="Ingresá tu Contraseña"
+                      />
+                    </div>
+                  </form>
+                  <button
+                    type="button"
+                    class="btn btn-link mb-3"
+                    data-bs-target="#exampleModal2"
+                    data-bs-toggle="modal"
+                  >
+                    Olvidé mi Contraseña
+                  </button>
 
+                  <a href="/pages/registro.html" class="btn btn-link mb-3"
+                    >No tienes una cuenta?</a
+                  >
+
+                  <a
+                    href="/pages/error404.html"
+                    class="btn btn-light border d-flex align-items-center gap-2 mb-3"
+                  >
+                    <img
+                      src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg"
+                      alt="Google"
+                      width="20"
+                      height="20"
+                    />
+                    Iniciar sesión con Google
+                  </a>
+
+                  <a
+                    href="/pages/error404.html"
+                    class="btn btn-primary d-flex align-items-center gap-2 mb-3"
+                    style="background-color: #1877f2; border-color: #1877f2"
+                  >
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png"
+                      alt="Facebook"
+                      width="20"
+                      height="20"
+                    />
+                    Iniciar sesión con Facebook
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-6">
+                  <img
+                    src="/img/Classic-Skater-for-Guys_600x600.webp"
+                    alt="Chico en skate"
+                    class="rounded-3 img-fluid"
+                  />
+                </div>
+              </article>
+            </div>
+            <div class="modal-footer">
+              <a href="/pages/error404.html" class="btn btn-primary"
+                >Ingresar</a
+              >
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Salir
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="exampleModal2"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel2"
+        aria-hidden="true"
+        style="display: none"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel2">
+                Recuperá tu Contraseña
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="mb-3">
+                <label for="email" class="col-form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Ingresá tu Email"
+                />
+              </div>
+            </div>
+            <div class="modal-footer">
+              <a href="/pages/error404.html" class="btn btn-primary"
+                >Recuperar</a
+              >
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-target="#exampleModal"
+                data-bs-toggle="modal"
+              >
+                Volver
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="container my-5">
+        <h1 class="h3 mb-4">Carrito de compras</h1>
+
+        <div class="row g-4">
+          <div class="col-12 col-lg-8">
+            <div class="table-responsive">
+              <table class="table align-middle">
+                <thead class="table-light">
+                  <tr>
+                    <th scope="col">Producto</th>
+                    <th scope="col" class="text-end">Precio</th>
+                    <th scope="col" class="text-center">Cant.</th>
+                    <th scope="col" class="text-end">Subtotal</th>
+                    <th scope="col" class="text-center">Acciones</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="d-flex align-items-center gap-3">
+                        <a href="./detalleproducto1.html"
+                          ><img
+                            src="../img/imgCategoriaCalzado/Zapatillas Forum 84 Low ADV/Zapatillas_Forum_84_Low_ADV_Blanco_JP6094_01_00_standard.avif"
+                            alt="Zapatillas Forum 84 Low ADV"
+                            class="carrito-img"
+                            a
+                        /></a>
+
+                        <div>
+                          <div class="fw-semibold">
+                            Zapatillas Forum 84 Low ADV
+                          </div>
+                          <small class="text-muted">Talle 42 · Blancas</small>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="text-end">AR$ 149.999</td>
+                    <td class="text-center">1</td>
+                    <td class="text-end">AR$ 149.999</td>
+                    <td class="text-center">
+                      <button class="btn btn-sm btn-outline-danger">
+                        Eliminar
+                      </button>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <div class="d-flex align-items-center gap-3">
+                        <a href="./detalleproducto3.html"
+                          ><img
+                            src="../img/Remeras/RemeraIndependentClipper/item38487foto154874th.jpg"
+                            alt="Remera Independent Clipper"
+                            class="carrito-img"
+                        /></a>
+                        <div>
+                          <div class="fw-semibold">
+                            Remera Independent Clipper
+                          </div>
+                          <small class="text-muted">Talle M · Blanca</small>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="text-end">AR$ 49.999</td>
+                    <td class="text-center">2</td>
+                    <td class="text-end">AR$ 99.998</td>
+                    <td class="text-center">
+                      <button class="btn btn-sm btn-outline-danger">
+                        Eliminar
+                      </button>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <div class="d-flex align-items-center gap-3">
+                        <a href="./detalleproducto2.html"
+                          ><img
+                            src="../img/imgCategoriaCalzado/Sambae_blanco/Zapatillas_Sambae_Blanco_JS3954_01_00_standard.avif"
+                            alt="Zapatillas Sambae"
+                            class="carrito-img"
+                        /></a>
+                        <div>
+                          <div class="fw-semibold">Zapatillas Sambae</div>
+                          <small class="text-muted">Talle 42 · Blanca</small>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="text-end">AR$ 179.999</td>
+                    <td class="text-center">1</td>
+                    <td class="text-end">AR$ 179.999</td>
+                    <td class="text-center">
+                      <button class="btn btn-sm btn-outline-danger">
+                        Eliminar
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <aside class="col-12 col-lg-4">
+            <div class="card border-0 shadow-sm">
+              <div class="card-body">
+                <h2 class="h5 mb-4">Resumen</h2>
+                <div class="d-flex justify-content-between mb-2">
+                  <span>Subtotal</span>
+                  <strong>AR$ 429.996</strong>
+                </div>
+                <div class="d-flex justify-content-between mb-3">
+                  <span>Envío</span>
+                  <span class="text-muted">Gratis</span>
+                </div>
+                <hr />
+                <div class="d-flex justify-content-between mb-4">
+                  <span class="h6 mb-0">Total</span>
+                  <span class="h5 mb-0">AR$ 429.996</span>
+                </div>
+
+                <div class="d-grid gap-2">
+                  <a href="./error404.html" class="btn btn-success"
+                    >Proceder con la compra</a
+                  >
+                  <a href="../index.html" class="btn btn-outline-secondary"
+                    >Seguir comprando</a
+                  >
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
     </main>
-    <footer>
-
+    <footer class="bg-dark">
+      <section class="container">
+        <div class="row text-center justify-cotent-center align-items-center">
+          <div class="col-12 col-md-4 order-sm-2 order-md-1">
+            <h4 class="text-white m-5">Redes Sociales</h4>
+            <a href="https://web.whatsapp.com/" class="m-2"
+              ><i class="fs-3 text-white bi bi-whatsapp"></i
+            ></a>
+            <a href="https://www.instagram.com/" class="m-2"
+              ><i class="fs-3 text-white bi bi-instagram"></i
+            ></a>
+            <a href="https://es-la.facebook.com/login/web/" class="m-2"
+              ><i class="fs-3 text-white bi bi-facebook"></i
+            ></a>
+          </div>
+          <div class="col-12 col-md-4 text-white order-sm-1 order-md-2">
+            <div>
+              <img
+                src="../img/logo-empresa.png"
+                alt="logo rolling code/ img de ndumentaria"
+                class="w-50"
+              />
+            </div>
+            <p>&copy;Todos los derechos reservados</p>
+          </div>
+          <div class="col-12 col-md-4 text-white order-sm-3 order-md-3">
+            <h4 class="my-3">📍 Ubicación de nuestra tienda</h4>
+            <source />
+            <iframe
+              class="w-auto img-fluid"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.1060679493785!2d-65.20974192332177!3d-26.83657849002932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d3ad7f30f1d%3A0xf8606cd659b8e3e4!2sRollingCode%20School!5e0!3m2!1ses-419!2sar!4v1754932280957!5m2!1ses-419!2sar"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-    <script src="/js/bootstrap.min.js"></script>
-</body>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
