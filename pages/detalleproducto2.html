@@ -16,6 +16,7 @@
     />
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/producto.css">
     <link
       rel="shortcut icon"
       href="../img/logo-empresa.png"
@@ -201,166 +202,315 @@
       </nav>
     </header>
     <main>
-      <div
-        class="modal fade"
-        id="exampleModal"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-        style="display: none"
-      >
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">
-                Ingresá a tu cuenta
-              </h1>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body">
-              <article class="row">
-                <div class="col-12 col-md-6">
-                  <form>
-                    <div class="mb-3">
-                      <label for="email" class="col-form-label">Email</label>
-                      <input
-                        type="email"
-                        class="form-control"
-                        id="email"
-                        placeholder="Ingresá tu Email"
-                      />
-                    </div>
-                    <div class="mb-3">
-                      <label for="password" class="col-form-label"
-                        >Contraseña</label
-                      >
-                      <input
-                        type="password"
-                        class="form-control"
-                        id="password"
-                        placeholder="Ingresá tu Contraseña"
-                      />
-                    </div>
-                  </form>
-                  <button
-                    type="button"
-                    class="btn btn-link mb-3"
-                    data-bs-target="#exampleModal2"
-                    data-bs-toggle="modal"
-                  >
-                    Olvidé mi Contraseña
-                  </button>
 
-                  <a href="/pages/registro.html" class="btn btn-link mb-3"
-                    >No tienes una cuenta?</a
-                  >
-
-                  <a
-                    href="/pages/error404.html"
-                    class="btn btn-light border d-flex align-items-center gap-2 mb-3"
-                  >
-                    <img
-                      src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg"
-                      alt="Google"
-                      width="20"
-                      height="20"
-                    />
-                    Iniciar sesión con Google
-                  </a>
-
-                  <a
-                    href="/pages/error404.html"
-                    class="btn btn-primary d-flex align-items-center gap-2 mb-3"
-                    style="background-color: #1877f2; border-color: #1877f2"
-                  >
-                    <img
-                      src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png"
-                      alt="Facebook"
-                      width="20"
-                      height="20"
-                    />
-                    Iniciar sesión con Facebook
-                  </a>
-                </div>
-
-                <div class="col-12 col-md-6">
-                  <img
-                    src="/img/Classic-Skater-for-Guys_600x600.webp"
-                    alt="Chico en skate"
-                    class="rounded-3 img-fluid"
-                  />
-                </div>
-              </article>
-            </div>
-            <div class="modal-footer">
-              <a href="/pages/error404.html" class="btn btn-primary"
-                >Ingresar</a
-              >
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-bs-dismiss="modal"
-              >
-                Salir
-              </button>
-            </div>
-          </div>
+     <div class="container my-4">
+  <div class="row g-4">
+    <!-- Galería -->
+    <div class="col-md-7">
+      <div class="d-flex">
+        <div class="me-2 d-flex flex-column thumbs">
+          <img src="../img/imgCategoriaCalzado/Sambae_blanco/Zapatillas_Sambae_Blanco_JS3954_01_00_standard.avif" 
+               onmouseover="changeImage(this)" class="active">
+          <img src="../img/imgCategoriaCalzado/Sambae_blanco/Zapatillas_Sambae_Blanco_JS3954_02_standard_hover.avif" 
+               onmouseover="changeImage(this)">
+          <img src="../img/imgCategoriaCalzado/Sambae_blanco/Zapatillas_Sambae_Blanco_JS3954_03_standard.avif" 
+               onmouseover="changeImage(this)">
+        </div>
+        <div class="flex-grow-1">
+          <img id="mainImage" src="../img/imgCategoriaCalzado/Sambae_blanco/Zapatillas_Sambae_Blanco_JS3954_01_00_standard.avif" class="main-img">
         </div>
       </div>
+    </div>
 
-      <div
-        class="modal fade"
-        id="exampleModal2"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel2"
-        aria-hidden="true"
-        style="display: none"
-      >
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel2">
-                Recuperá tu Contraseña
-              </h1>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body">
-              <div class="mb-3">
-                <label for="email" class="col-form-label">Email</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  placeholder="Ingresá tu Email"
-                />
+    <!-- Detalles -->
+    <div class="col-md-5">
+      <h5 class="text-muted">Nuevo | +1000 vendidos</h5>
+      <h3 class="fw-bold">Zapatillas Sambae</h3>
+      <div class="mb-2">
+        ⭐⭐⭐⭐☆ <span class="text-muted">(1141)</span>
+      </div>
+      <h2 class="fw-bold">$180.000</h2>
+      <p class="text-muted">12 cuotas de $24.000</p>
+      <p class="text-success fw-bold">Llega gratis el viernes</p>
+      
+      <div class="mb-3">
+        <label class="fw-bold">Cantidad: </label>
+        <select class="form-select w-auto d-inline-block ms-2">
+          <option>1 unidad</option>
+          <option>2 unidades</option>
+          <option>3 unidades</option>
+          <option>4 unidades</option>
+          <option>5 unidades</option>
+        </select>
+        <span class="text-muted ms-2">(+50 disponibles)</span>
+      </div>
+      
+      <a href="/pages/carrito.html" class="btn btn-outline-dark btn-lg w-100">Agregar al carrito</a>
+      
+      <div class="mt-3">
+        <p class="mb-1"><strong>Tienda Oficial Adidas Argentina</strong> ✅</p>
+        <p class="text-muted">+250mil ventas</p>
+        <p class="mb-1">✔ Devolución gratis en 30 días</p>
+        <p class="mb-1">✔ Compra protegida</p>
+        <p>✔ 30 días de garantía de fábrica</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Productos relacionados -->
+  <div class="container my-5">
+  <h4 class="mb-4">Productos relacionados</h4>
+
+  <div id="carouselProductos" class="carousel slide" >
+    <div class="carousel-inner">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="row g-3">
+          
+          <!-- Producto 1 -->
+          <div class="col-md-4">
+            <div class="card product-card">
+              <a href="/pages/detalleproducto1.html"><img src="../img/imgCategoriaCalzado/Zapatillas Forum 84 Low ADV/Zapatillas_Forum_84_Low_ADV_Blanco_JP6094_01_00_standard.avif" class="card-img-top" alt="Producto 1"></a>
+              <div class="card-body">
+                <p class="card-text">Zapatillas Forum 84 Low ADV</p>
+                <p class="old-price">$246.923</p>
+                <h5 class="fw-bold">$149.999 <span class="discount">45% OFF</span></h5>
+                <p class="text-muted">12 cuotas de $18.514</p>
+                <p class="free-shipping">Envío gratis</p>
               </div>
             </div>
-            <div class="modal-footer">
-              <a href="/pages/error404.html" class="btn btn-primary"
-                >Recuperar</a
-              >
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-bs-target="#exampleModal"
-                data-bs-toggle="modal"
-              >
-                Volver
-              </button>
+          </div>
+
+          <!-- Producto 2 -->
+          <div class="col-md-4">
+            <div class="card product-card">
+              <img src="..//img/imgCategoriaCalzado/Tokyo/Zapatillas_Tokyo_Plateado_JQ0593_01_00_standard.avif" class="card-img-top" alt="Producto 2">
+              <div class="card-body">
+                <p class="card-text">Zapatillas Tokyo</p>
+                <p class="old-price">$299.999</p>
+                <h5 class="fw-bold">$179.999 <span class="discount">40% OFF</span></h5>
+                <p class="text-muted">Mismo precio en 3 cuotas de $59.999</p>
+                <p class="free-shipping">Envío gratis ⚡ FULL</p>
+              </div>
             </div>
           </div>
+
+          <!-- Producto 3 -->
+          <div class="col-md-4">
+            <div class="card product-card">
+              <img src="..//img/imgCategoriaCalzado/Campus2000/Zapatillas_Campus_anos_2000_Blanco_JP6145_01_00_standard.avif" class="card-img-top" alt="Producto 3">
+              <div class="card-body">
+                <p class="card-text">Zapatillas Campus años 2000</p>
+                <h5 class="fw-bold">$200.000</h5>
+                <p class="text-muted">12 cuotas de $29.610</p>
+                <p class="free-shipping">Envío gratis</p>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
+
+      <!-- Slide 2 (ejemplo con otros productos) -->
+      <div class="carousel-item">
+        <div class="row g-3">
+          
+          <div class="col-md-4">
+            <div class="card product-card">
+              <img src="../img/imgCategoriaCalzado/ZambaOG/Zapatillas_Samba_OG_Blanco_B75806_01_00_standard.avif" class="card-img-top" alt="Producto 4">
+              <div class="card-body">
+                <p class="card-text">Zapatillas Samba OG</p>
+                <p class="old-price">$150.000</p>
+                <h5 class="fw-bold">$99.999 <span class="discount">35% OFF</span></h5>
+                <p class="text-muted">6 cuotas de $16.666</p>
+                <p class="free-shipping">Envío gratis</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card product-card">
+              <img src="../img/imgCategoriaCalzado/CamousRosas/Zapatillas_Campus_00s_Rosa_JP6190_01_00_standard.avif" class="card-img-top" alt="Producto 5">
+              <div class="card-body">
+                <p class="card-text">Zapatillas Campus Rosas 00S</p>
+                <h5 class="fw-bold">$220.000</h5>
+                <p class="text-muted">12 cuotas de $18.333</p>
+                <p class="free-shipping">Envío gratis</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card product-card">
+              <img src="../img/imgCategoriaCalzado/SuperStar/Zapatilla_Superstar_Blanco_IH8659_01_standard.avif" class="card-img-top" alt="Producto 6">
+              <div class="card-body">
+                <p class="card-text">Zapatilla Superstar</p>
+                <h5 class="fw-bold">$180.000</h5>
+                <p class="text-muted">12 cuotas de $15.000</p>
+                <p class="free-shipping">Envío gratis</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Controles de navegación -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselProductos" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon bg-dark rounded-circle p-3"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselProductos" data-bs-slide="next">
+      <span class="carousel-control-next-icon bg-dark rounded-circle p-3"></span>
+    </button>
+  </div>
+</div>
+
+<div class="descripcion mt-5">
+  <h4>Descripción</h4>
+  <p class="text-muted fst-italic">
+    *Las fotos son ilustrativas. Algunos detalles del diseño pueden variar según partida*
+  </p>
+
+  <h6 class="mt-3">CARACTERÍSTICAS:</h6>
+  <ul class="lista-descripcion">
+    <li>Origen: Importado</li>
+    <li>Material de la suela: Caucho</li>
+    <li>Material exterior: La parte superior de nobuck y cuero ofrece un aspecto elegante.</li>
+    <li>Tipo de cierre: Cordones</li>
+    <li class="extra">Dimensiones del paquete: 10 x 8 x 4 pulgadas; 1,4 Libras</li>
+    <li class="extra">Número de modelo del producto: IG1947</li>
+    <li class="extra">Fabricante: Adidas</li>
+    <li class="extra">Departamento: Mujer</li>
+  </ul>
+
+  <a href="#" id="toggleDescripcion" class="text-primary fw-bold">Ver descripción completa ⌄</a>
+</div>
+
+<div class="mt-5">
+  <h5>Opiniones sobre el producto</h5>
+  <p class="text-muted">Lo que dicen otros compradores</p>
+
+  <!-- Lista de comentarios -->
+  <div id="comentarios">
+    <div class="border-bottom pb-3 mb-3">
+      <strong>Juan Pérez</strong> 
+      <span class="text-warning">★★★★★</span>
+      <p class="mb-1">Están terribles, las recomiendo.</p>
+      <small class="text-muted">Hace 2 semanas</small>
+    </div>
+
+    <div class="border-bottom pb-3 mb-3">
+      <strong>María Gómez</strong> 
+      <span class="text-warning">★★★★☆</span>
+      <p class="mb-1">Están buenas, nomás hubo un problema con el envío.</p>
+      <small class="text-muted">Hace 1 mes</small>
+    </div>
+
+    <div class="border-bottom pb-3 mb-3">
+      <strong>Carlos López</strong> 
+      <span class="text-warning">★★★☆☆</span>
+      <p class="mb-1">Cumplen, pero la suela es muy fina. Aún así está bien por el precio.</p>
+      <small class="text-muted">Hace 3 meses</small>
+    </div>
+  </div>
+
+   <div class="mt-4">
+    <h6>Dejá tu opinión</h6>
+    <form id="formComentario">
+      <div class="mb-2">
+        <input type="text" id="nombre" class="form-control" placeholder="Tu nombre" required>
+      </div>
+      <div class="mb-2">
+        <select id="estrellas" class="form-control" required>
+          <option value="★★★★★">5 estrellas</option>
+          <option value="★★★★☆">4 estrellas</option>
+          <option value="★★★☆☆">3 estrellas</option>
+          <option value="★★☆☆☆">2 estrellas</option>
+          <option value="★☆☆☆☆">1 estrella</option>
+        </select>
+      </div>
+      <div class="mb-2">
+        <textarea id="comentario" class="form-control" rows="3" placeholder="Escribe tu opinión" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Publicar comentario</button>
+    </form>
+  </div>
+</div>
+
+
+
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Ingresá a tu cuenta</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <article class="row">
+                            <div class="col-12 col-md-6">
+                               <form>
+                                <div class="mb-3">
+                                    <label for="email" class="col-form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Ingresá tu Email">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="password" class="col-form-label">Contraseña</label>
+                                    <input type="password" class="form-control" id="password" placeholder="Ingresá tu Contraseña">
+                                </div>
+                                </form>
+                                <button type="button" class="btn btn-link mb-3" data-bs-target="#exampleModal2" data-bs-toggle="modal">Olvidé mi Contraseña</button> 
+                                
+                                <a href="/pages/registro.html" class="btn btn-link mb-3">No tienes una cuenta?</a>
+
+                                <a href="/pages/error404.html" class="btn btn-light border d-flex align-items-center gap-2 mb-3">
+                                    <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google" width="20" height="20">
+                                    Iniciar sesión con Google
+                                </a>
+
+                                <a href="/pages/error404.html" class="btn btn-primary d-flex align-items-center gap-2 mb-3" style="background-color: #1877F2; border-color: #1877F2;">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" 
+                                        alt="Facebook" width="20" height="20">
+                                    Iniciar sesión con Facebook
+                                </a>
+                            </div>
+                            
+                            <div class="col-12 col-md-6">
+                                <img src="/img/Classic-Skater-for-Guys_600x600.webp" alt="Chico en skate" class="rounded-3 img-fluid">
+                            </div>
+                        </article>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="/pages/error404.html" class="btn btn-primary">Ingresar</a>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Salir</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true" style="display: none;">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel2">Recuperá tu Contraseña</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="email" class="col-form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Ingresá tu Email">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="/pages/error404.html" class="btn btn-primary">Recuperar</a>
+                        <button type="button" class="btn btn-secondary" data-bs-target="#exampleModal" data-bs-toggle="modal">Volver</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer class="bg-dark">
       <section class="container">
@@ -404,6 +554,64 @@
         </div>
       </section>
     </footer>
-    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script>
+  function changeImage(img) {
+    let mainImage = document.getElementById("mainImage");
+    let thumbs = document.querySelectorAll(".thumbs img");
+
+    // cambiar imagen principal (usar versión grande)
+    mainImage.src = img.src.replace("w=200", "w=800");
+
+    // remover borde activo de todas
+    thumbs.forEach(el => el.classList.remove("active"));
+
+    // marcar la actual
+    img.classList.add("active");
+  }
+</script>
+    <script>
+  document.getElementById("formComentario").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    // Obtener valores
+    const nombre = document.getElementById("nombre").value;
+    const estrellas = document.getElementById("estrellas").value;
+    const comentario = document.getElementById("comentario").value;
+
+    // Crear nuevo comentario
+    const nuevoComentario = document.createElement("div");
+    nuevoComentario.classList.add("border-bottom", "pb-3", "mb-3");
+    nuevoComentario.innerHTML = `
+      <strong>${nombre}</strong>
+      <span class="text-warning">${estrellas}</span>
+      <p class="mb-1">${comentario}</p>
+      <small class="text-muted">Hace un momento</small>
+    `;
+
+    // Insertar en la lista
+    document.getElementById("comentarios").prepend(nuevoComentario);
+
+    // Resetear formulario
+    document.getElementById("formComentario").reset();
+  });
+</script>
+
+<script>
+  const toggleLink = document.getElementById("toggleDescripcion");
+  const extras = document.querySelectorAll(".extra");
+  let abierto = false;
+
+  toggleLink.addEventListener("click", function(e) {
+    e.preventDefault();
+    abierto = !abierto;
+
+    extras.forEach(item => {
+      item.style.display = abierto ? "list-item" : "none";
+    });
+
+    toggleLink.textContent = abierto ? "Ver menos ▲" : "Ver descripción completa ⌄";
+  });
+</script>
   </body>
 </html>
