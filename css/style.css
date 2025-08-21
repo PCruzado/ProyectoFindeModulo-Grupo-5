@@ -196,6 +196,20 @@ main {
     padding: 0 !important;
   }
 }
+
+.btn-outline-danger:hover {
+  background-color: #dc3545;
+  color: #fff;
+  border-color: #dc3545;
+}
+
+.carrito-img {
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
 .consulta-cont {
   margin-top: 1em;
 }
